@@ -15,7 +15,7 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-sed -i '$a src-git packages https://github.com/x-wrt/packages' feeds.conf.default
+sed -i '$a src-git packages-xwrt https://github.com/x-wrt/packages' feeds.conf.default
 sed -i '$a src-git luci https://github.com/x-wrt/luci' feeds.conf.default
 sed -i '$a src-git routing https://github.com/x-wrt/routing' feeds.conf.default
 sed -i '$a src-git telephony https://github.com/x-wrt/telephony' feeds.conf.default
