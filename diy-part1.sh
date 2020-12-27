@@ -15,9 +15,9 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-sed -i '$a src-git packages https://github.com/x-wrt/packages.git' feeds.conf.default
-sed -i '$a src-git luci https://github.com/x-wrt/luci.git' feeds.conf.default
-sed -i '$a src-git routing https://github.com/x-wrt/routing.git' feeds.conf.default
-sed -i '$a src-git telephony https://github.com/x-wrt/telephony.git' feeds.conf.default
-sed -i '$a src-git freifunk https://github.com/x-wrt/freifunk-openwrt-packages.git' feeds.conf.default
-sed -i '$a src-git x https://github.com/x-wrt/com.x-wrt.git' feeds.conf.default
+sed -i '$a src-git packages https://github.com/x-wrt/packages' feeds.conf.default
+sed -i '$a src-git luci https://github.com/x-wrt/luci' feeds.conf.default
+sed -i '$a src-git routing https://github.com/x-wrt/routing' feeds.conf.default
+sed -i '$a src-git telephony https://github.com/x-wrt/telephony' feeds.conf.default
+sed -i '$a src-git freifunk https://github.com/x-wrt/freifunk-openwrt-packages' feeds.conf.default
+sed -i '$a src-git x https://github.com/x-wrt/com.x-wrt' feeds.conf.default
