@@ -18,8 +18,8 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-#  schedule:
-#    - cron: 0 8 * * 5
+  schedule:
+    - cron: 0 8 * * 5
 
 env:
   REPO_URL: https://github.com/x-wrt/x-wrt
@@ -68,7 +68,7 @@ jobs:
         sudo -E apt -qq install build-essential ecj fastjar file flex g++ gawk gettext git git-core java-propose-classpath libelf-dev libncurses5-dev libncursesw5-dev libssl-dev python python3 subversion unzip wget zlib1g-dev
         cd openwrt
         git fetch origin
-        git checkout -f 8.0_b202012170013
+        git describe --tags $(git rev-list --tags --max-count=1)
         ./scripts/feeds update -a && ./scripts/feeds install -a
         
     - name: Load custom configuration
